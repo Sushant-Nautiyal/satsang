@@ -496,24 +496,7 @@ body{
 .benefit-card:hover img{
     transform:scale(1.08);
 }
-/* .gallery-item{ */
-    /* background:white; */
-    /* padding:25px; */
-    /* border-radius:18px; */
-    /* box-shadow:0 4px 14px rgba(0,0,0,.08); */
-/* } */
 
-/* .gallery-item{ */
-    /* overflow:hidden; */
-    /* border-radius:18px; */
-/* } */
-
-/* .gallery-item img{ */
-    /* width:100%; */
-    /* aspect-ratio:1/1; */
-    /* object-fit:cover; */
-    /* display:block; */
-/* } */
 .reveal{
     opacity:0;
     transform:translateY(30px);
@@ -599,7 +582,19 @@ footer{
     border:none;
     border-radius:12px;
 }
+.feedback-form{
+    max-width:900px;
+    margin:0 auto;
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
 
+.feedback-form iframe{
+    display:block;
+    width:100%;
+    border:none;
+}
 .whatsapp{
     position:fixed;
     right:20px;
@@ -762,6 +757,21 @@ footer{
 
     .hero p{
         font-size:1rem;
+    }
+
+}
+@media(max-width:768px){
+
+    .feedback-form iframe{
+        height:1100px;
+    }
+
+}
+@media(max-width:768px){
+
+    .whatsapp-float{
+        bottom:20px;
+        right:15px;
     }
 
 }
