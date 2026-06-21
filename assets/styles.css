@@ -574,7 +574,7 @@ footer{
 }
 
 .gurudev-photo{
-    background-image:url('../images/guidance/gurudev.jpg');
+    background-image:url('../images/guidance/sadgurudev.jpeg');
 }
 
 #guidance .card{
@@ -875,4 +875,19 @@ footer{
         text-align:center;
     }
 
+}
+.guru-title{
+    color:#1e3a8a;
+    font-size:0.95rem;
+    font-weight:600;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin-bottom:10px;
+}
+
+.guru-name{
+    color:#1e3a8a;
+    font-size:2rem;
+    margin:0;
+    line-height:1.3;
 }
