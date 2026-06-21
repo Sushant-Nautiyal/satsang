@@ -17,18 +17,63 @@ body{
 .navbar{
     position:sticky;
     top:0;
-    background:white;
+    z-index:1000;
+
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(10px);
+
     padding:15px 30px;
+
     display:flex;
     justify-content:space-between;
+    align-items:center;
+
     box-shadow:0 2px 10px rgba(0,0,0,.08);
-    z-index:100;
+}
+
+.logo{
+    font-size:1.2rem;
+    font-weight:700;
+    color:#6b4f2a;
+}
+
+.nav-links{
+    display:flex;
+    gap:12px;
+
+    list-style:none;
+    margin:0;
+    padding:0;
 }
 
 .nav-links a{
+    display:block;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:#fff7ec;
+    border:1px solid #ffd7a3;
+
+    color:#6b4f2a;
     text-decoration:none;
-    margin-left:18px;
-    color:#333;
+    font-weight:600;
+
+    transition:.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    background:linear-gradient(
+        135deg,
+        #ff9933,
+        #f97316
+    );
+
+    color:white;
+
+    transform:translateY(-2px);
 }
 .hero{
     min-height:100vh;
@@ -724,6 +769,7 @@ footer{
         text-align:center;
         font-size:1.8rem;
         width:100%;
+		white-space:nowrap;
     }
 
     .nav-links{
@@ -772,6 +818,61 @@ footer{
     .whatsapp-float{
         bottom:20px;
         right:15px;
+    }
+
+}
+@media (max-width:768px){
+
+    header{
+        padding:15px 20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+    }
+
+    nav ul li a{
+    background:#fffaf3;
+
+    border:1px solid #e8c27a;
+
+    color:#6b3f12;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.06);
+
+    border-radius:30px;
+    padding:10px 20px;
+}
+
+    nav ul li a:hover,
+    nav ul li a.active{
+       background:linear-gradient(
+        135deg,
+        #c98c2d,
+        #e8c27a
+    );
+
+    color:white;
+    }
+
+}
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        padding:15px;
+    }
+
+    .nav-links{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .logo{
+        text-align:center;
     }
 
 }
