@@ -1014,3 +1014,84 @@ footer{
         font-size:2.2rem;
     }
 }
+
+/* ==========================
+   KEY FOCUS AREAS
+========================== */
+
+#focus-areas{
+    background:linear-gradient(
+        180deg,
+        #fffdf8 0%,
+        #faf6ed 100%
+    );
+}
+
+.focus-intro{
+    max-width:800px;
+    margin:0 auto 50px;
+    text-align:center;
+    color:#555;
+    line-height:1.8;
+}
+
+.focus-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:24px;
+}
+
+.focus-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    position:relative;
+    overflow:hidden;
+
+    border-top:4px solid var(--saffron);
+
+    box-shadow:
+        0 8px 24px rgba(0,0,0,.05);
+
+    transition:.35s ease;
+}
+
+.focus-card:hover{
+    transform:translateY(-8px);
+    box-shadow:
+        0 18px 40px rgba(0,0,0,.10);
+}
+
+.focus-number{
+    font-size:3rem;
+    font-weight:800;
+    color:rgba(249,115,22,.12);
+    display:block;
+    line-height:1;
+    margin-bottom:15px;
+}
+
+.focus-card h3{
+    margin:0 0 12px;
+    color:var(--blue);
+    font-size:1.2rem;
+}
+
+.focus-card p{
+    margin:0;
+    line-height:1.7;
+    color:#555;
+}
+
+/* Mobile */
+
+@media(max-width:640px){
+
+    .focus-card{
+        padding:24px;
+    }
+
+    .focus-number{
+        font-size:2.5rem;
+    }
+}
