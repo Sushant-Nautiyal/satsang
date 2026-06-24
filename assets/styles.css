@@ -24,29 +24,33 @@ body {
 	color: #222;
 }
 
-.navbar {
-	position: sticky;
-	top: 0;
-	z-index: 1000;
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 
-	background: rgba(255, 255, 255, .95);
-	backdrop-filter: blur(10px);
+    background: rgba(255,255,255,.95);
+    backdrop-filter: blur(10px);
 
-	padding: 15px 30px;
+    padding: 15px 30px;
 
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
 	font-size: 1.2rem;
 	font-weight: 700;
 	color: #6b4f2a;
+	text-decoration:none;
+    cursor:pointer;
 }
-
+.logo:hover{
+    color:var(--saffron);
+}
 .nav-links {
 	display: flex;
 	gap: 12px;
@@ -85,7 +89,8 @@ body {
 }
 
 .hero {
-	min-height: 100vh;
+	padding-top:100px;
+	padding-bottom:40px;
 
 	background:
 		linear-gradient(rgba(10, 10, 10, 0.40),
@@ -97,7 +102,8 @@ body {
 	background-repeat: no-repeat;
 
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
+	margin-top: 40px;
 	justify-content: center;
 
 	text-align: center;
@@ -332,15 +338,16 @@ body {
 }
 
 /* Divider */
-.teacher-divider {
-	width: 80px;
-	height: 4px;
+.teacher-divider{
+    width:400px;
+    height:4px;
 
-	background: var(--saffron);
+    background:var(--saffron);
 
-	border-radius: 50px;
+    border-radius:50px;
 
-	margin-bottom: 30px;
+    margin-top:15px;
+    margin-bottom:30px;
 }
 
 /* Profile Points */
@@ -452,7 +459,6 @@ body {
 
 	border: 1px solid rgba(249, 115, 22, .15);
 
-	cursor: pointer;
 }
 
 .card:hover {
