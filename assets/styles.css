@@ -106,7 +106,14 @@ body {
 	position: relative;
 	overflow: hidden;
 }
-
+#pillars,
+#focus-areas,
+#teacher,
+#benefits,
+#gallery,
+#feedback{
+    scroll-margin-top:100px;
+}
 /* Decorative Golden Glow */
 .hero::before {
 	content: "";
