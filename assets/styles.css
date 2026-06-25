@@ -1105,7 +1105,21 @@ footer {
 	line-height: 1.7;
 	color: #555;
 }
+.benefit-text {
+  margin-bottom: 8px;   /* reduce gap after the paragraph */
+}
 
+.points-wrapper {
+  text-align: center;
+}
+
+.bullet-points {
+  display: inline-block;
+  text-align: left;
+  margin-top: 0;        /* removes big gap before bullets */
+  margin-bottom: 1;
+  padding-left: 20px;
+}
 /* Mobile */
 
 @media(max-width:640px) {
