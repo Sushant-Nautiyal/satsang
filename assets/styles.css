@@ -221,6 +221,15 @@ body {
 
 /* Responsive */
 @media(max-width:768px) {
+	.hero{
+        min-height:100vh;
+
+        padding:110px 20px 60px;
+
+        display:flex;
+        align-items:flex-start;
+        justify-content:center;
+    }
 
 	.hero-content {
 		padding: 35px 25px;
@@ -1131,4 +1140,21 @@ footer {
 	.focus-number {
 		font-size: 2.5rem;
 	}
+}
+
+.credit{
+    margin-top:14px;
+    font-size:0.60rem;
+    color:#8d8d8d;
+    letter-spacing:.3px;
+}
+
+.credit a{
+    color:#a8a8a8;
+    text-decoration:none;
+    transition:.25s;
+}
+
+.credit a:hover{
+    color:#ffffff;
 }
