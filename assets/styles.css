@@ -762,18 +762,18 @@ footer {
 @media (max-width: 768px) {
 	.navbar {
 		flex-direction: column;
-		gap: 15px;
-		padding: 15px;
+		gap: 6px;
+		padding: 1px 1px;
 	}
 
 	.logo {
 		text-align: center;
 		width: 100%;
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 		line-height: 1.3;
 		white-space: normal;
 		word-break: break-word;
-		margin-bottom: 10px;
+		margin-bottom: 5px;
 		display: block;
 	}
 
@@ -842,7 +842,8 @@ footer {
 	}
 
 	.testimonial-wrapper {
-		overflow-x: auto;               /* allow swipe */
+		overflow-x: auto;
+		/* allow swipe */
 		-webkit-overflow-scrolling: touch;
 		scroll-snap-type: x mandatory;
 		padding-bottom: 10px;
@@ -854,7 +855,8 @@ footer {
 	}
 
 	.testimonial-track {
-		animation: none;                /* pause marquee on mobile */
+		animation: none;
+		/* pause marquee on mobile */
 		width: max-content;
 		display: flex;
 		gap: 1rem;
