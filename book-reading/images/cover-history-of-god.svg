@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="860" viewBox="0 0 600 860">
+  <rect width="600" height="860" rx="32" fill="#312e81" />
+  <rect x="72" y="68" width="456" height="724" rx="24" fill="#f8fafc" />
+  <rect x="104" y="104" width="392" height="312" rx="18" fill="#8b5cf6" />
+  <path d="M142 410c42-68 122-102 158-102 56 0 142 34 164 102" stroke="#64748b" stroke-width="12" stroke-linecap="round" fill="none" />
+  <text x="300" y="620" text-anchor="middle" fill="#0f172a" font-size="34" font-family="Inter, Arial, sans-serif" font-weight="700">A History of God</text>
+  <text x="300" y="662" text-anchor="middle" fill="#475569" font-size="24" font-family="Inter, Arial, sans-serif">Karen Armstrong</text>
+</svg>
